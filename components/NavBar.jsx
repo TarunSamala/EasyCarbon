@@ -12,13 +12,16 @@ const navLinks = [
     path: "#about",
   },
   {
-    title: "Projects",
+    title: "Buy",
     path: "#projects",
   },
   {
-    title: "Contact",
-    path: "#contact",
-  },
+    title:"Sell",
+    path:"#sell",
+  },{
+    title:"Upload Credit",
+    path:"#uploadcredit",
+  }
 ];
 
 const Navbar = () => {
@@ -28,12 +31,12 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100">
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
       <Link href = {"/"}>
-            <Image
+            {/* <Image
             src = "/Image/osc.png"
             alt = "logo"
             width={100}
             height={100}
-            />
+            /> */}EasyCarbon
           </Link>
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
