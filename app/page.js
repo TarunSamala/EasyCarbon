@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import NavBar from "@/components/NavBar";
 import List from "@/components/Listpage";
+import Listpage from "@/components/Listpage";
 
 
 
@@ -10,6 +11,9 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col bg-[#121212]">
       <NavBar/>
+      <nav>
+
+      </nav>
       <div class="container mt-24 mx-auto px-12 py-20">
       <div className="grid grid-cols-1 sm:grid-cols-12">
         <div className="col-span-7 place-self-center text-center sm:text-left">
@@ -39,9 +43,13 @@ export default function Home() {
       </div>
       </div>
       </div>
-      <div className="pt-10">
-        <Listpage/>
+      <div className="mt-24 flex flex-col items-center justify-center py-20 ">
+        <div className="text-yellow-400  text-6xl" >Add Carbon Credits</div>
+        <div className="text-[#ADB7BE] pt-6 text-xl">Enter the amount of credits you want to add and upload the relevant certificates,<br/>the tokens will be credited to your wallet automatically</div>
+        <div className="pt-8 ">
+        <input className="rounded-md bg-transparent border-yellow-200 p-2" placeholder="Amount"></input></div>
       </div>
+
       </div>
     </main>
   );

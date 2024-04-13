@@ -31,3 +31,12 @@ body {
     text-wrap: balance;
   }
 }
+input{
+ 
+  border-color: yellow;
+}
+input:focus{
+  
+  border:2px solid #FACC15 ;
+
+}
